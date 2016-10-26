@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		02D29D5E1DC0581A002A4379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D5D1DC0581A002A4379 /* AppDelegate.swift */; };
-		02D29D601DC0581A002A4379 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D5F1DC0581A002A4379 /* MasterViewController.swift */; };
-		02D29D621DC0581A002A4379 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D611DC0581A002A4379 /* DetailViewController.swift */; };
+		02D29D621DC0581A002A4379 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D611DC0581A002A4379 /* MapViewController.swift */; };
 		02D29D651DC0581A002A4379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D631DC0581A002A4379 /* Main.storyboard */; };
 		02D29D671DC0581A002A4379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D661DC0581A002A4379 /* Assets.xcassets */; };
 		02D29D6A1DC0581A002A4379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D681DC0581A002A4379 /* LaunchScreen.storyboard */; };
+		02D29D7D1DC05B5A002A4379 /* scripture.css in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D761DC05B5A002A4379 /* scripture.css */; };
+		02D29D7E1DC05B5A002A4379 /* geo.21.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D771DC05B5A002A4379 /* geo.21.sqlite */; };
+		02D29D7F1DC05B5A002A4379 /* Scripture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D781DC05B5A002A4379 /* Scripture.swift */; };
+		02D29D801DC05B5A002A4379 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D791DC05B5A002A4379 /* Book.swift */; };
+		02D29D811DC05B5A002A4379 /* GeoPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D7A1DC05B5A002A4379 /* GeoPlace.swift */; };
+		02D29D821DC05B5A002A4379 /* ScriptureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D7B1DC05B5A002A4379 /* ScriptureRenderer.swift */; };
+		02D29D831DC05B5A002A4379 /* GeoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D7C1DC05B5A002A4379 /* GeoDatabase.swift */; };
+		02D29D851DC05BBC002A4379 /* geocode.js in Resources */ = {isa = PBXBuildFile; fileRef = 02D29D841DC05BBC002A4379 /* geocode.js */; };
+		02D29D871DC05D1B002A4379 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D861DC05D1B002A4379 /* BooksViewController.swift */; };
+		02D29D891DC05D2E002A4379 /* VolumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D881DC05D2E002A4379 /* VolumesViewController.swift */; };
+		02D29D8B1DC06A60002A4379 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D29D8A1DC06A60002A4379 /* MapKit.framework */; };
+		02D29D8D1DC06CB2002A4379 /* ScriptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D29D8C1DC06CB2002A4379 /* ScriptureViewController.swift */; };
+		7C55B46B666666D7E2600A9B /* Pods_Map_Scriptures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B361343006F627D09A47795A /* Pods_Map_Scriptures.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D29D5A1DC0581A002A4379 /* Map Scriptures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map Scriptures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D29D5D1DC0581A002A4379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02D29D5F1DC0581A002A4379 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		02D29D611DC0581A002A4379 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		02D29D611DC0581A002A4379 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		02D29D641DC0581A002A4379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02D29D661DC0581A002A4379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D29D691DC0581A002A4379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D29D6B1DC0581A002A4379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D29D761DC05B5A002A4379 /* scripture.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = scripture.css; sourceTree = "<group>"; };
+		02D29D771DC05B5A002A4379 /* geo.21.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = geo.21.sqlite; sourceTree = "<group>"; };
+		02D29D781DC05B5A002A4379 /* Scripture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scripture.swift; sourceTree = "<group>"; };
+		02D29D791DC05B5A002A4379 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		02D29D7A1DC05B5A002A4379 /* GeoPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPlace.swift; sourceTree = "<group>"; };
+		02D29D7B1DC05B5A002A4379 /* ScriptureRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureRenderer.swift; sourceTree = "<group>"; };
+		02D29D7C1DC05B5A002A4379 /* GeoDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoDatabase.swift; sourceTree = "<group>"; };
+		02D29D841DC05BBC002A4379 /* geocode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = geocode.js; sourceTree = "<group>"; };
+		02D29D861DC05D1B002A4379 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		02D29D881DC05D2E002A4379 /* VolumesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumesViewController.swift; sourceTree = "<group>"; };
+		02D29D8A1DC06A60002A4379 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		02D29D8C1DC06CB2002A4379 /* ScriptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureViewController.swift; sourceTree = "<group>"; };
+		3324EB285ACDEC7B5BA98886 /* Pods-Map Scriptures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map Scriptures.release.xcconfig"; path = "Pods/Target Support Files/Pods-Map Scriptures/Pods-Map Scriptures.release.xcconfig"; sourceTree = "<group>"; };
+		B361343006F627D09A47795A /* Pods_Map_Scriptures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Map_Scriptures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11B06CC59409308804D74B3 /* Pods-Map Scriptures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map Scriptures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Map Scriptures/Pods-Map Scriptures.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D29D8B1DC06A60002A4379 /* MapKit.framework in Frameworks */,
+				7C55B46B666666D7E2600A9B /* Pods_Map_Scriptures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,8 @@
 			children = (
 				02D29D5C1DC0581A002A4379 /* Map Scriptures */,
 				02D29D5B1DC0581A002A4379 /* Products */,
+				3FAE0B4810D3C29CF1F94354 /* Pods */,
+				D75CA304378024220794C1D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,83 @@
 		02D29D5C1DC0581A002A4379 /* Map Scriptures */ = {
 			isa = PBXGroup;
 			children = (
-				02D29D5D1DC0581A002A4379 /* AppDelegate.swift */,
-				02D29D5F1DC0581A002A4379 /* MasterViewController.swift */,
-				02D29D611DC0581A002A4379 /* DetailViewController.swift */,
-				02D29D631DC0581A002A4379 /* Main.storyboard */,
+				02D29D751DC0588A002A4379 /* Model */,
+				02D29D721DC05844002A4379 /* View */,
+				02D29D731DC05857002A4379 /* Controller */,
 				02D29D661DC0581A002A4379 /* Assets.xcassets */,
-				02D29D681DC0581A002A4379 /* LaunchScreen.storyboard */,
-				02D29D6B1DC0581A002A4379 /* Info.plist */,
+				02D29D741DC05879002A4379 /* Assets */,
+				02D29D711DC0582D002A4379 /* Supporting Files */,
 			);
 			path = "Map Scriptures";
+			sourceTree = "<group>";
+		};
+		02D29D711DC0582D002A4379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D6B1DC0581A002A4379 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02D29D721DC05844002A4379 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D631DC0581A002A4379 /* Main.storyboard */,
+				02D29D681DC0581A002A4379 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		02D29D731DC05857002A4379 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D5D1DC0581A002A4379 /* AppDelegate.swift */,
+				02D29D861DC05D1B002A4379 /* BooksViewController.swift */,
+				02D29D611DC0581A002A4379 /* MapViewController.swift */,
+				02D29D8C1DC06CB2002A4379 /* ScriptureViewController.swift */,
+				02D29D881DC05D2E002A4379 /* VolumesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		02D29D741DC05879002A4379 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D771DC05B5A002A4379 /* geo.21.sqlite */,
+				02D29D841DC05BBC002A4379 /* geocode.js */,
+				02D29D761DC05B5A002A4379 /* scripture.css */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		02D29D751DC0588A002A4379 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D791DC05B5A002A4379 /* Book.swift */,
+				02D29D7C1DC05B5A002A4379 /* GeoDatabase.swift */,
+				02D29D7A1DC05B5A002A4379 /* GeoPlace.swift */,
+				02D29D781DC05B5A002A4379 /* Scripture.swift */,
+				02D29D7B1DC05B5A002A4379 /* ScriptureRenderer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3FAE0B4810D3C29CF1F94354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C11B06CC59409308804D74B3 /* Pods-Map Scriptures.debug.xcconfig */,
+				3324EB285ACDEC7B5BA98886 /* Pods-Map Scriptures.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D75CA304378024220794C1D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D29D8A1DC06A60002A4379 /* MapKit.framework */,
+				B361343006F627D09A47795A /* Pods_Map_Scriptures.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02D29D6E1DC0581A002A4379 /* Build configuration list for PBXNativeTarget "Map Scriptures" */;
 			buildPhases = (
+				6835541A5195A81CA8916C82 /* [CP] Check Pods Manifest.lock */,
 				02D29D561DC0581A002A4379 /* Sources */,
 				02D29D571DC0581A002A4379 /* Frameworks */,
 				02D29D581DC0581A002A4379 /* Resources */,
+				ED87BE1DDF3A2CC526E86B87 /* [CP] Embed Pods Frameworks */,
+				0B359BD17324CA513DEB84C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D29D6A1DC0581A002A4379 /* LaunchScreen.storyboard in Resources */,
+				02D29D851DC05BBC002A4379 /* geocode.js in Resources */,
+				02D29D7E1DC05B5A002A4379 /* geo.21.sqlite in Resources */,
+				02D29D7D1DC05B5A002A4379 /* scripture.css in Resources */,
 				02D29D671DC0581A002A4379 /* Assets.xcassets in Resources */,
 				02D29D651DC0581A002A4379 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +239,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B359BD17324CA513DEB84C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Map Scriptures/Pods-Map Scriptures-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6835541A5195A81CA8916C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED87BE1DDF3A2CC526E86B87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Map Scriptures/Pods-Map Scriptures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02D29D561DC0581A002A4379 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D29D621DC0581A002A4379 /* DetailViewController.swift in Sources */,
-				02D29D601DC0581A002A4379 /* MasterViewController.swift in Sources */,
+				02D29D621DC0581A002A4379 /* MapViewController.swift in Sources */,
+				02D29D871DC05D1B002A4379 /* BooksViewController.swift in Sources */,
+				02D29D8D1DC06CB2002A4379 /* ScriptureViewController.swift in Sources */,
 				02D29D5E1DC0581A002A4379 /* AppDelegate.swift in Sources */,
+				02D29D821DC05B5A002A4379 /* ScriptureRenderer.swift in Sources */,
+				02D29D831DC05B5A002A4379 /* GeoDatabase.swift in Sources */,
+				02D29D891DC05D2E002A4379 /* VolumesViewController.swift in Sources */,
+				02D29D811DC05B5A002A4379 /* GeoPlace.swift in Sources */,
+				02D29D801DC05B5A002A4379 /* Book.swift in Sources */,
+				02D29D7F1DC05B5A002A4379 /* Scripture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +422,7 @@
 		};
 		02D29D6F1DC0581A002A4379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11B06CC59409308804D74B3 /* Pods-Map Scriptures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRZ7ZDX7SX;
@@ -276,6 +436,7 @@
 		};
 		02D29D701DC0581A002A4379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3324EB285ACDEC7B5BA98886 /* Pods-Map Scriptures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRZ7ZDX7SX;
@@ -306,6 +467,7 @@
 				02D29D701DC0581A002A4379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
