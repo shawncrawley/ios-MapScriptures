@@ -11,6 +11,14 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
     
+    //MARK: - Storyboard
+    
+    private struct Storyboard {
+        static let detailViewControllerIdentifier = "DetailVC"
+        static let name = "Main"
+    }
+    
+    
     //MARK: - Properties
     
     var window: UIWindow?
@@ -18,18 +26,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     //MARK: - Application lifecycle
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        splitViewController.delegate = self
+        if let splitViewController = window!.rootViewController as? UISplitViewController {
+            splitViewController.delegate = self
+        }
         return true
     }
 
     // MARK: - Split view
 
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
-        return false
+        return true
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, separateSecondaryFrom primaryViewController: UIViewController) -> UIViewController? {
+        if let navVC = primaryViewController as? UINavigationController {
+            for controller in navVC.viewControllers {
+                if controller.restorationIdentifier == Storyboard.detailViewControllerIdentifier {
+                    return controller
+                }
+            }
+        }
+        
+        let storyboard = UIStoryboard(name: Storyboard.name, bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: Storyboard.detailViewControllerIdentifier)
+        
+        return detailVC
     }
 
 }
